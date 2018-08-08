@@ -1,0 +1,111 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  .App-header {
+    background-color: #0472b6;
+    height: 102px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-title {
+    font-size: 1.5em;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+
+  .inheritBackground {
+    backgroundColor: inherit
+  }
+
+  .zindex {
+    zIndex: 99999
+  }
+
+  .maxWidthCls {
+    maxWidth:"100%"
+  }
+
+  .fontSizeClass {
+    fontSize:"22px"
+  }
+
+  .paddingLeftClass {
+    paddingLeft: "3px"
+  }
+
+  .displayBlockClass {
+    display: block
+  }
+
+  paddingRightClass {
+    paddingRight: "10px"
+  }
+
+  paddingLeftClass {
+    paddingLeft: "10px"
+  }
+
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .App-Header-Logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  }
+.btn-circle.btn-lg {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.tab-content {
+  /*position: relative;*/
+  z-index: 10;
+  overflow: visible;
+  background: #FFFFFF;
+  padding: 15px;
+  border-radius: 0px;
+  border-top-left-radius: 0;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(221,221,221,0.75);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(221,221,221,0.75);
+  box-shadow: 0px 1px 5px 1px rgba(221,221,221,0.75);
+}
+.checkbox-green{
+  color: #008000;  border-color: #008000
+}
+
+.react-datepicker {
+  font-size: 1.3rem !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 1.5rem !important;
+}
+
+.react-datepicker__header {
+  padding-top: 6px !important;
+}
+
+.react-datepicker__navigation {
+  top: 13px !important;
+}
+
+.react-datepicker__input-container input.form-control {
+  margin-bottom: -5px !important;
+}

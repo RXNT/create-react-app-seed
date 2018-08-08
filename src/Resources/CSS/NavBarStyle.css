@@ -1,0 +1,93 @@
+.NavBar {
+  background-color:#e0e0e0;
+  cursor: default; 
+} 
+
+.TopItem {
+  color:Black;
+  background-color: #aaaaaa;
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 12px; 
+  font-weight: normal;
+  border: 1px solid white;
+  border-right-color:#8C8C8C;
+  border-bottom-color:#8C8C8C;
+  padding-top: 4px; 
+  padding-bottom: 2px; 
+  cursor:hand;
+}
+
+.TopItemHover {
+  color:black;
+  background-color:#d5d5d5;
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 12px; 
+  font-weight: normal;
+  border: 1px solid white;
+  border-right-color:#8C8C8C;
+  border-bottom-color:#8C8C8C;
+  padding-top: 4px; 
+  padding-bottom: 2px; 
+  cursor:hand;
+}
+
+.TopItemActive {
+  color:black;
+  background-color:#d5d5d5;
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 12px; 
+  font-weight: normal;
+  border: 1px solid #8C8C8C;
+  border-right-color:white;
+  border-bottom-color:white;
+  padding-top: 4px; 
+  padding-bottom: 2px; 
+  cursor:hand;
+}
+
+.Level2Item {
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 10px; 
+  border: 1px solid white;
+  border-right-color:#cccccc;
+  border-bottom-color:#cccccc;
+  padding:3px;
+  padding-left: 10px; 
+  cursor:hand;
+  font-weight: normal;
+}
+
+.Level2ItemHover {
+  background-color:White;
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 10px; 
+  border: 1px solid white;
+  border-right-color:#cccccc;
+  border-bottom-color:#cccccc;
+  padding:3px;
+  padding-left: 10px; 
+  cursor:hand;
+  font-weight: normal;
+}
+
+.Level2ItemSelected {
+  background-color:White;
+  font-family: Verdana,Tahoma,Sans-Serif; 
+  font-size: 10px; 
+  border: 1px solid #cccccc;
+  border-right-color:white;
+  border-bottom-color:white;
+  padding:3px;
+  padding-left: 10px; 
+  cursor:hand;
+  font-weight: normal;
+}
+
+.Level2Group {
+  background-color:#eeeeee;
+}
+
+.Empty {
+}
+
+
