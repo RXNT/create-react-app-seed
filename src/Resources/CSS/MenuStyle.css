@@ -1,0 +1,54 @@
+﻿.MenuGroup
+{
+  background-color:white;
+  border:solid 1px Gray; 
+}
+
+.MenuItem 
+{
+  color:black; 
+  font-family:Verdana,Tahoma,Sans-Serif; 
+  font-size: 8pt;
+  cursor:default;
+}
+
+.MenuItemHover 
+{
+  color:black; 
+  background-color:silver; 
+  color:black; 
+  font-family:Verdana,Tahoma,Sans-Serif; 
+  font-size: 8pt; 
+  cursor:default;
+}
+
+.MenuBreak
+{
+  padding:0px; 
+}
+
+.TopGroup
+{
+  cursor: default;
+  margin: 0px 0px 0px 0px;
+}
+
+.TopMenuItem {
+  color: #ffffff;
+  font-family: Verdana,Tahoma,Sans-Serif;
+  font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+  cursor: default;
+  text-decoration: none;
+  border: none;
+}
+
+.TopMenuItemHover {
+  color:black; 
+  background-color:silver; 
+  color:black; 
+  font-family:Verdana,Tahoma,Sans-Serif; 
+  font-size: 12px; 
+  cursor:default;
+}
