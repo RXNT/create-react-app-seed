@@ -9,6 +9,11 @@ export default class LoginComponent extends Component {
     super(props);
   }
 
+  handleRegistration() {
+    this.props.routerProps.history.push('/userRegistration');
+    console.log('Resgistration handled')
+  }
+
   render() {
     var {handleSubmit, handleChange, toastrController } = this.props;
     //toastrController ? toastr.success('Logged Successfully') : toastr.error('Login falied')
@@ -39,6 +44,14 @@ export default class LoginComponent extends Component {
             type="submit"
           >
             Login
+          </Button>
+          <Button
+            block
+            className="btn btn-secondary"
+            bsSize="large"
+            onClick={()=> this.handleRegistration()}
+          >
+            Register
           </Button>
         </form>
       </div>
