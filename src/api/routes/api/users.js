@@ -56,7 +56,6 @@ router.post('/login', auth.optional, (req, res, next) => {
       return next(err);
     }
 
-    console.log('passportUser', passportUser)
 
     if(passportUser) {
       const user = passportUser;
