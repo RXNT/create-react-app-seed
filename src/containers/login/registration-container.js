@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import LoginComponent from "../../components/login/login-component";
+import UserRegistrationComponent from "../../components/login/registration-component";
 import { connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as loginActions  from './actions';
-import toastr from 'reactjs-toastr';
 
-class Login extends React.Component {
+
+
+class UserRegistration extends Component {
     constructor(props) {
 		super(props);
         this.handleChange = this.handleChange.bind(this);
@@ -17,22 +18,21 @@ class Login extends React.Component {
         onChangeHandler(event)
     }
 
-     handleSubmit =  async (event) => {
-        var {onLogin} = this.props.actions;
+     handleSubmit =  (event) => {
+        var {onUserRegistration} = this.props.actions;
         var {routerProps} = this.props;
         event.preventDefault();
         var requestObject ={};
         var length =  event.target.length; 
         for(var i = 0; i < length - 1; i++) requestObject[event.target[i].id] = event.target[i].value;
-        var resp =  await onLogin(requestObject);
-        if(resp.user) routerProps.history.push('/patientList');
-        else toastr.error(resp.message)
+        onUserRegistration(requestObject);
+        routerProps.history.push('/patientList');
     }
 
     render() {
         var { email, password, routerProps, toastrController } = this.props;
         return (
-            <LoginComponent
+            <UserRegistrationComponent
                 validateForm={this.validateForm}
                 handleChange={this.handleChange}
                 handleSubmit={this.handleSubmit}
@@ -60,4 +60,4 @@ function mapStateToProps(store) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(UserRegistration);
